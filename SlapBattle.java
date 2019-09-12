@@ -24,7 +24,24 @@ public class SlapBattle {
         Player computer = new Player("computer");
         boolean gameOver = false;
         while (!gameOver) {
-            System.out.println("Uh oh");
+            System.out.println("How strong do you want to slap?");
+            int slapStrength = kb.nextInt();
+            int compSlapStrength = (int)(Math.random() * 10) + 1;
+            //Compare the slap strengths
+            //Both players lose the strength they used
+            //The loser loses health = difference between slaps
+            //i.e. human 5, comp 7, human's health reduce by 2
+            //Handle win / lose
+            System.out.println( player.getHealth() );
+            if (compSlapStrength > slapStrength) {
+                player.setHealth( /*new health*/);
+            }
+            else if (compSlapStrength < slapStrength) {
+                
+            }
+            else {
+                
+            }
         }
     }
     
